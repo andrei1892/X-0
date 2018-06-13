@@ -1,4 +1,5 @@
 # X & 0
-a simple game of tic-tac-toe in which the user one and plays against the computer ;
-gameplay: the user starts and then the computer randomly selects a cell;
+A simple game of tic-tac-toe in which the user plays against the computer ;
+Gameplay: the user choose what side he is, then he starts the game by clicking on a cell;
+Afterwards the computer randomly selects a cell ( no AI or special algorithm) ;
 https://codepen.io/andrei1892/full/LrEYmL -> how the game looks
