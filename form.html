@@ -6,28 +6,33 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 
-body{   margin:0;
-		padding:0;
-		height:100%;
-		text-align: center;  }	
-		
-#page{  min-height:100%;
-		position:relative; 	}
+html, body{   margin:0;
+		      padding:0;
+			  height: 100%;
+			  text-align: center;  }	
 
-#sideContainer { position: relative;
+.header {
+    padding: 60px;
+	margin-bottom: 25px;
+    text-align: center;
+    background: #1abc9c;
+    color: black;
+}
+		
+#sideContainer { 
 				 float:left;
 				 width: 25%;
 				}	
 	
-#info { position: relative;
+#info { 
 		float: left;
 		width: 25%;
 	}
 	
-#tableContainer { position: relative;
+#tableContainer { 
 				  float: left;
 				  width: 50%;
-					text-align:center;
+				  text-align:center;
 				  display: block;
 			  }	
 	
@@ -52,6 +57,10 @@ button {  	margin:auto;
 			   display: block;  
 			}
 
+@media only screen and (max-width:740px) {
+	#sideContainer, #info, #tableContainer  { width: 100%;}	
+	}		
+
 .theXClass { background-image: url("x.png");
 			 background-position: center;
 			 background-repeat: no-repeat;	}		
@@ -66,13 +75,15 @@ button {  	margin:auto;
 
 <body>
 
-<div id="page"> 
+<div class="header"> Tic-Tac-Toe </div>
 
-	<div id="info"> 
+	<div id="sideContainer"> 
 
-	<p> <strong> Winner: </strong> <span id="announce"> </span> </p>
+	<p> <b>	Choose a side: </b> </p>
 
-	</div>
+	<button type="button" id="but1" > <b>X</b> </button>  <button type="button" id="but2" > <b>0</b> </button>
+
+	</div>		
 
 	<div id="tableContainer" >
 
@@ -96,15 +107,11 @@ button {  	margin:auto;
 
 	</div>	
 
-	<div id="sideContainer"> 
+	<div id="info"> 
 
-	<p> <b>	Choose: </b> </p>
-
-	<button type="button" id="but1" > <b>X</b> </button>  <button type="button" id="but2" > <b>0</b> </button>
+	<p> <strong> Winner: </strong> <span id="announce"> </span> </p>
 
 	</div>
-
-
 
 </body>
 

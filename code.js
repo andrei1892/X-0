@@ -149,7 +149,7 @@ function endGame() {
 			resett.type = "reset";
 			resett.appendChild(name);
 			resett.onclick = function() { location.reload(true)};
-			document.getElementById("tableContainer").appendChild(resett);
+			document.getElementById("info").appendChild(resett);
 			//<input type="button" value="Reload Page" onClick="window.location.reload()">
 			document.getElementById("announce").innerHTML = "Game Over! " + grid.winner  ;
 			var cells = document.getElementsByTagName("td");
